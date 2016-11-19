@@ -25,13 +25,13 @@ public class TestPerformance
 		System.out.println("\n\n Time for linked list : "+llTime);
 
 		start=System.currentTimeMillis();
-		arrList.remove(3);
+		arrList.remove(3000);
 		//System.out.println("\n\n Array list values after removing third value :-");
 		stop=System.currentTimeMillis();
 		System.out.println("\n\n Removing Time for Array list : "+(stop-start));
 
 		start=System.currentTimeMillis();
-		lnkList.remove(2);
+		lnkList.remove(3000);
 		//System.out.println("\n\n Linked list values after removing second value :-");
 		stop=System.currentTimeMillis();
 		System.out.println("\n\n Removing Time for linked list : "+(stop-start));
@@ -43,7 +43,7 @@ public class TestPerformance
 	{
 		for(int i=0;i<50000;i++)
 		{
-			list.add(i*start);
+			list.add(i);
 		}
 	}
 
@@ -51,19 +51,20 @@ public class TestPerformance
 	{
 		for(int i=0;i<list.size();i++)
 		{
-			System.out.println("\t"+list.get(i));
+			System.out.print("\t"+list.get(i));
 		}
 	}
 }
 
 
 /* 
+
 Output :-(partial Output)
 
- Time for array list : 63
+  Time for array list : 2313
 
 
- Time for linked list : 31
+ Time for linked list : 4837
 
 
  Removing Time for Array list : 0
