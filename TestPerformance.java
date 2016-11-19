@@ -41,7 +41,7 @@ public class TestPerformance
 
 	public static void addValues(int start,List<Integer> list)
 	{
-		for(int i=0;i<500;i++)
+		for(int i=0;i<50000;i++)
 		{
 			list.add(i*start);
 		}
