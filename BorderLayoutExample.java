@@ -21,7 +21,6 @@ public class BorderLayoutExample implements ActionListener
 	public static void main(String args[])
 	{
 		BorderLayoutExample b=new BorderLayoutExample();
-		//JFrame jf=new JFrame();
 		
 		b.createWindow(jf);
 		
@@ -54,7 +53,7 @@ public class BorderLayoutExample implements ActionListener
 		p3.add(cb5);
 		p4.add(cb4);
 		p5.add(cb3);
-		//createTextArea(p3);
+		
 		
 	}
 	
@@ -86,19 +85,6 @@ public class BorderLayoutExample implements ActionListener
 		p1.add(cb1);
 	}
 		
-	public  void createTextArea(JPanel p)
-	{
-		TextArea ta=new TextArea();
-		p.add(ta,new GridLayout());
-	
-	}
-	
-	public  void createCheckBox(JPanel p,String str)
-	{
-		Checkbox cb=new Checkbox(str);
-		cb.setName(str);
-		p.add(cb);
-	}
 	
 	public void actionPerformed(ActionEvent event)
 	{
